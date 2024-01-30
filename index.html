@@ -16,11 +16,12 @@
 </head>
 <body>
     <div id="root">
-        <div>
+        <div v-if="emails.length === 10">
             <ul>
                 <li v-for="email of emails">{{email}}</li>
             </ul>
         </div>
+        <div v-else>Loading...</div>
     </div>
     
 </body>
